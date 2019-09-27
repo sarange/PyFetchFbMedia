@@ -1,4 +1,6 @@
 cookies.sqlite
-logs/*
-media/*
+logs
+media
 geckodriver.log
+.venv
+__pycache__

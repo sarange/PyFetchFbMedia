@@ -1,6 +1,6 @@
 # PyFetchFbMedia (Alpha v0.2)
 ![alt text](https://img.shields.io/badge/python-%3E%3D3.6-brightgreen "Python >=3.6")
-![alt text](https://img.shields.io/badge/licence-GPL%20(%3E%3D2)-blue "licence GPL >=2")
+![alt text](https://img.shields.io/badge/licence-GPL3-blue "licence GPL 3")
 
 PyFetchFbMedia is a small project that gets pictures and videos that is sent on Facebook messager with python without leveraging the Facebook API, but with Firefox's geckodriver. It can fetch media from given threads without opening upread ones, waiting util they are read.
 
@@ -10,7 +10,7 @@ PyFetchFbMedia is a small project that gets pictures and videos that is sent on 
 #### OR
 * Copy the cookies 'value' and 'expiry' values from your browser to manualMakeCookies.py and run ```python3 manualMakeCookies.py``` and the value `cookie_name` to whatever you want to
 #### OR
-* Use the login(username, password) function of the Class. `Not recommended`, if you are using a different ip from last login Facebook will ask for more information.
+* Use the login(username, password) function of the Class. ***Not recommended***, if you are using a different ip from last login Facebook will ask for more information.
 * Edit ```settings.py``` like 
 ```python
 a = {
@@ -42,7 +42,7 @@ name = [a,b]
 ## Instalation
 
 * ```git clone``` the project
-* ```pip3 install -r requirements```
+* ```pip3 install -r requirements.txt```
 * Done
 
 ## Comments

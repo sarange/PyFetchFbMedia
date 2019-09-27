@@ -25,7 +25,9 @@ def job(stop, signal, lock, name, people, headless=True, debug=False, override=F
 	account.logIt(f'Starting thread on people {people} (headless={headless}, debug={debug}), t={strftime("%H:%M:%S")}')
 	try:
 		account.loadCookies()
+		account.logIt('Cookies found, loaded')
 	except:
+		account.logIt('Cookies not found, searching for cookies.sqlite')
 		makeCookiesFromFirefox()
 		account.loadCookies()
 	account.getToMessages()
@@ -35,8 +37,8 @@ def job(stop, signal, lock, name, people, headless=True, debug=False, override=F
 			if not account.manageThreads(override):
 				stop.set()
 	except Exception as e:
-		account.logIt(f'Exception {e} catched inside thread, trying to restart it, t+{round(time() - start)}s')
-		account.logIt(f'Restarting thread {name} on t={round(time())}s')
+		account.logIt(f'Exception {e} catched inside thread, trying to restart it')
+		account.logIt(f'Restarting thread {name}')
 
 def waitForJobs(start, signals, watchers, names, timerForNonRespoindingThreads):
 	while True:
