@@ -47,5 +47,5 @@ name = [a,b]
 
 ## Comments
 
-* If you don't care about opening unread threads set override to true
-* If your profile is in an olther language than English or Greek, add the equivalent of 'Conversation List' in your language
+* If you don't care about opening unread threads set override to true.
+* If your profile is in an olther language than English or Greek, add the equivalent of 'Conversation List' in your language to PyFetchFbMedia.py in the variable `self.convLists` at line 40.
