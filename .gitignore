@@ -1,0 +1,4 @@
+cookies.sqlite
+logs/*
+media/*
+geckodriver.log
